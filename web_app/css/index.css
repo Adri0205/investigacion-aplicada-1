@@ -1,0 +1,32 @@
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-main img {
+    width: 100%;
+    aspect-ratio: 1920 / 650;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.carousel-images {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 220px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.image.selected {
+    transform: scale(1.2);
+    border: 2px solid #0088ff;
+}
