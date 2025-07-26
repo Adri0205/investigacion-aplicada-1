@@ -1,3 +1,13 @@
+.logo-container {
+    padding: 15px;
+    text-align: left;
+}
+
+.image-logo {
+    max-width: 180px;
+    height: auto;
+}
+
 .carousel {
     max-width: 100%;
     margin: 0 auto;
@@ -29,4 +39,40 @@
 .image.selected {
     transform: scale(1.2);
     border: 2px solid #0088ff;
+}
+
+@media (max-width: 599px) {
+    .carousel-main {
+        display: none;
+    }
+
+    .carousel-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .image {
+        width: 90%;
+        height: auto;
+        transform: none !important;
+        border: none !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .carousel-images img:nth-child(3),
+    .carousel-images img:nth-child(4) {
+        display: none;
+    }
+
+    .carousel-images {
+        gap: 50px;
+    }
+
+    .image {
+        width: 200px;
+        height: 110px;
+    }
 }
